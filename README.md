@@ -1,7 +1,7 @@
 InterestJS
 ===============
 
-[![Build Status](https://secure.travis-ci.org/kfiku/IntrestJS.png?branch=master&style=flat)](https://travis-ci.org/kfiku/LoanJS)
+[![Build Status](https://travis-ci.org/kfiku/InterestJS.svg)](https://travis-ci.org/kfiku/LoanJS)
 [![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg?style=flat)](https://david-dm.org/Rowno/loanjs)
 
 [![NPM](https://nodei.co/npm/interestjs.png?downloads=true&stars=true)](https://npmjs.org/package/loanjs)
