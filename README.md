@@ -1,10 +1,4 @@
-InterestJS
-===============
-
-[![Build Status](https://travis-ci.org/kfiku/InterestJS.svg)](https://travis-ci.org/kfiku/LoanJS)
-[![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg?style=flat)](https://david-dm.org/Rowno/loanjs)
-
-[![NPM](https://nodei.co/npm/interestjs.png?downloads=true&stars=true)](https://npmjs.org/package/loanjs)
+# InterestJS [![NPM version](https://badge.fury.io/js/interestjs.png?style=flat)](http://badge.fury.io/js/interestjs) [![Build Status](https://travis-ci.org/kfiku/InterestJS.svg)](https://travis-ci.org/kfiku/LoanJS) [![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg)](https://david-dm.org/kfiku/interestjs)
 
 > Calculate compound interest in js (browser/node.js/browserify).
 
@@ -19,7 +13,7 @@ var inst     = Interest(singleAmount, months, interestRate, params);
 
 // returns
 { 
-  installments  : [
+  payments  : [
     {
       capital: number,
       intrest: number,
@@ -28,7 +22,6 @@ var inst     = Interest(singleAmount, months, interestRate, params);
       sum: number
     }
   ],
-  payments      : number,
   interestSum   : number,
   capitalSum    : number,
   taxSum        : number,
