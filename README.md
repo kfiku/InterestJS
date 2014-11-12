@@ -49,6 +49,11 @@ Interest(singleAmount, months, interestRate, params)
 | interestRate       | number | *required | interest rate in percent (ex. 3.5)
 | params             | object | undefined | parameters
 
+#### Params object
+* tax - persentage tax on interest
+* dynamicAmount - function for getting next amount of savings
+* startAmount - amount of money put at the begining
+
 ### Returns
 ```js
 { 
@@ -97,6 +102,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+#### 2014-11-10 v0.0.1
+ * add dynamic amount param to have controll of every saving
+ 
 #### 2014-11-10 v0.0.1
  * init commit
 
