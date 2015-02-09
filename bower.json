@@ -1,0 +1,24 @@
+{
+  "name": "interest-js",
+  "version": "0.0.3",
+  "homepage": "https://github.com/kfiku/InterestJS",
+  "authors": [
+    "Grzegorz Klimek <kfiku.com@gmail.com>"
+  ],
+  "description": "Counting compound interest for javascript",
+  "main": "lib/interest.js",
+  "keywords": [
+    "interest",
+    "credit",
+    "money",
+    "calculator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

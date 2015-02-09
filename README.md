@@ -5,7 +5,15 @@
 
 ## Getting Started
 
-Install the module with: `npm install interestjs`
+Install the module with: 
+```
+npm install interestjs
+```
+
+or with Bower:
+```
+bower install interest-js --save
+```
 
 ```js
 var Interest = require('interestjs');
