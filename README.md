@@ -110,6 +110,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+#### 2015-10-12 v0.1.0
+ * fixing typo intrest -> interest
+ * update dependencies
+ 
 #### 2014-11-10 v0.0.1
  * add dynamic amount param to have controll of every saving
  
