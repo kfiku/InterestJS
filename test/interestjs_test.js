@@ -14,16 +14,16 @@ describe('interestjs node module.', function() {
     for (i; i < interest.payments.length; i++) {
       p = interest.payments[i];
       assert(p.capital > 0, true);
-      assert(p.intrest > 0, true);
+      assert(p.interest > 0, true);
       assert(p.tax > 0, true);
 
       taxSum += p.tax;
-      interestSum += p.intrest;
+      interestSum += p.interest;
     }
 
     assert(interest.interestSum > 0, true, 'wrong interestSum');
     assert.equal(interest.interestSum, interestSum,
-                'intrestsSum ('+interest.interestSum+') not exual to sum of all intrests ('+interestSum+') in payments array');
+                'interestsSum ('+interest.interestSum+') not exual to sum of all interests ('+interestSum+') in payments array');
     assert.equal(interest.taxSum, taxSum,
                 'taxSum ('+interest.taxSum+') not exual to taxSum of all taxes ('+taxSum+') in payments array');
 
@@ -40,16 +40,16 @@ describe('interestjs node module.', function() {
     for (i; i < interest.payments.length; i++) {
       p = interest.payments[i];
       assert(p.capital > 0, true);
-      assert(p.intrest > 0, true);
+      assert(p.interest > 0, true);
       assert(p.tax > 0, true);
 
       taxSum += p.tax;
-      interestSum += p.intrest;
+      interestSum += p.interest;
     }
 
     assert(interest.interestSum > 0, true, 'wrong interestSum');
     assert.equal(interest.interestSum, interestSum,
-                'intrestsSum ('+interest.interestSum+') not exual to sum of all intrests ('+interestSum+') in payments array');
+                'interestsSum ('+interest.interestSum+') not exual to sum of all interests ('+interestSum+') in payments array');
     assert.equal(interest.taxSum, taxSum,
                 'taxSum ('+interest.taxSum+') not exual to taxSum of all taxes ('+taxSum+') in payments array');
 

@@ -24,7 +24,7 @@ var inst     = Interest(singleAmount, months, interestRate, params);
   payments  : [
     {
       capital: number,
-      intrest: number,
+      interest: number,
       tax: number,
       capitalSum: number,
       sum: number
@@ -68,7 +68,7 @@ Interest(singleAmount, months, interestRate, params)
   installments  : [
     {
       capital     : number,
-      intrest     : number,
+      interest     : number,
       installment : number,
       remain      : number
     }

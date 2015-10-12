@@ -1,6 +1,6 @@
 {
   "name": "interestjs",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "main": "lib/interest.js",
   "description": "Calculate compound interest in js (browser/node.js/browserify)",
   "homepage": "https://github.com/kfiku/InterestJS",
@@ -30,15 +30,14 @@
     "intrerest"
   ],
   "devDependencies": {
-    "browserify": "^6.2.0",
-    "grunt-bump": "0.0.16",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.6.0",
+    "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^1.9.0",
-    "jshint-stylish": "^1.0.0",
-    "load-grunt-tasks": "^1.0.0",
-    "time-grunt": "^1.0.0"
+    "jshint-stylish": "^2.0.1",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.0"
   },
   "scripts": {
     "test": "grunt",

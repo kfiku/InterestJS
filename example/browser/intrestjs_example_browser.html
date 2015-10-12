@@ -15,8 +15,8 @@
       <input id="months" value="120">
     </div>
     <div>
-      <label for="intrestRate">Intrest rate:</label>
-      <input id="intrestRate" value="4">%
+      <label for="interestRate">Intrest rate:</label>
+      <input id="interestRate" value="4">%
     </div>
     <div>
       <label for="tax">Tax:</label>
@@ -38,16 +38,16 @@
       var
         amount = document.getElementById('amount'),
         months = document.getElementById('months'),
-        intrestRate = document.getElementById('intrestRate'),
+        interestRate = document.getElementById('interestRate'),
         tax = document.getElementById('tax'),
         calculateBtn = document.getElementById('calculate'),
         div = document.createElement("div"),
         calc = function () {
-          console.log(amount.value, intrestRate.value, months.value);
+          console.log(amount.value, interestRate.value, months.value);
           var interest_1 = new Interest(
                         Number(amount.value),
                         Number(months.value),
-                        Number(intrestRate.value),
+                        Number(interestRate.value),
                         {
                           tax: Number(tax.value)
                         });
