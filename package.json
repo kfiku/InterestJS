@@ -34,7 +34,7 @@
     "grunt-bump": "0.8.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-cli": "^3.0.0",
+    "grunt-mocha-cli": "^4.0.0",
     "jshint-stylish": "^2.0.1",
     "load-grunt-tasks": "^3.3.0",
     "time-grunt": "^1.2.0"
