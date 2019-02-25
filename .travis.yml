@@ -2,5 +2,6 @@ language: node_js
 node_js:
   - "lts/*"
   - "node"
-before_script:
-  - npm install -g grunt-cli
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
