@@ -1,4 +1,4 @@
-# InterestJS [![NPM version](https://badge.fury.io/js/interestjs.png?style=flat)](http://badge.fury.io/js/interestjs) [![Build Status](https://travis-ci.org/kfiku/InterestJS.svg)](https://travis-ci.org/kfiku/InterestJS) [![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg)](https://david-dm.org/kfiku/interestjs)
+# InterestJS [![NPM version](https://badge.fury.io/js/interestjs.png?style=flat)](http://badge.fury.io/js/interestjs) [![Build Status](https://travis-ci.org/kfiku/InterestJS.svg)](https://travis-ci.org/kfiku/InterestJS.svg?branch=master) [![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg)](https://david-dm.org/kfiku/interestjs)
 
 > Calculate compound interest in js (browser/node.js/browserify).
 
