@@ -48,17 +48,20 @@
     "babel-jest": "^24.1.0"
   },
   "scripts": {
-    "test": "grunt",
-    "test-new": "npm run lint && jest --coverage",
+    "test": "npm run lint && jest --coverage",
     "lint": "standard lib/*.js",
     "lint:fix": "standard lib/*.js --fix",
     "test:watch": "jest --coverage --watchAll",
-    "clean": "rm -rf dist coverage",
-    "build": "npm run clean && npm run build:loan && npm run build:loanToHtml && npm run min",
-    "build:loan": "rollup lib/loan.js --name loan --format iife --file dist/loan.js && babel -o dist/loan.js dist/loan.js",
-    "build:loanToHtml": "rollup lib/loanToHtmlTable.js --name loanToHtmlTable --format iife --file dist/loanToHtmlTable.js && babel -o dist/loanToHtmlTable.js dist/loanToHtmlTable.js",
-    "min": "npm run min:loan && npm run min:loanToHtml",
-    "min:loan": "uglifyjs dist/loan.js -c -m -o dist/loan.min.js",
-    "min:loanToHtml": "uglifyjs dist/loanToHtmlTable.js -c -m -o dist/loanToHtmlTable.min.js"
+    "clean": "rm -rf dist coverage"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 0
+      }
+    }
   }
 }
