@@ -37,9 +37,28 @@
     "grunt-mocha-cli": "^4.0.0",
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^4.0.0",
-    "time-grunt": "^1.4.0"
+    "time-grunt": "^1.4.0",
+    "coveralls": "~3.0.3",
+    "jest": "~24.1.0",
+    "rollup": "~1.2.3",
+    "standard": "~12.0.1",
+    "uglify-js": "~3.4.9",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-jest": "^24.1.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "test-new": "npm run lint && jest --coverage",
+    "lint": "standard lib/*.js",
+    "lint:fix": "standard lib/*.js --fix",
+    "test:watch": "jest --coverage --watchAll",
+    "clean": "rm -rf dist coverage",
+    "build": "npm run clean && npm run build:loan && npm run build:loanToHtml && npm run min",
+    "build:loan": "rollup lib/loan.js --name loan --format iife --file dist/loan.js && babel -o dist/loan.js dist/loan.js",
+    "build:loanToHtml": "rollup lib/loanToHtmlTable.js --name loanToHtmlTable --format iife --file dist/loanToHtmlTable.js && babel -o dist/loanToHtmlTable.js dist/loanToHtmlTable.js",
+    "min": "npm run min:loan && npm run min:loanToHtml",
+    "min:loan": "uglifyjs dist/loan.js -c -m -o dist/loan.min.js",
+    "min:loanToHtml": "uglifyjs dist/loanToHtmlTable.js -c -m -o dist/loanToHtmlTable.min.js"
   }
 }
