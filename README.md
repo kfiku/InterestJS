@@ -1,5 +1,5 @@
-# InterestJS 
-[![NPM version](https://badge.fury.io/js/interestjs.png?style=flat)](http://badge.fury.io/js/interestjs)
+# InterestJS
+[![NPM version](https://badge.fury.io/js/interestjs.svg)](http://badge.fury.io/js/interestjs)
 [![Build Status](https://travis-ci.org/kfiku/InterestJS.svg?branch=master)](https://travis-ci.org/kfiku/InterestJS)
 [![Coverage Status](https://coveralls.io/repos/github/kfiku/InterestJS/badge.svg?branch=master)](https://coveralls.io/github/kfiku/InterestJS?branch=master)
 [![Dependency Status](https://david-dm.org/kfiku/InterestJS/dev-status.svg)](https://david-dm.org/kfiku/interestjs)
