@@ -8,7 +8,7 @@
   "author": {
     "name": "Grzegorz Klimek",
     "email": "kfiku.com@gmail.com",
-    "url": "kfiku.com"
+    "url": "https://github.com/kfiku"
   },
   "repository": {
     "type": "git",
@@ -30,17 +30,16 @@
     "intrerest"
   ],
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-bump": "0.8.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-cli": "^3.0.0",
-    "jshint-stylish": "^2.0.1",
-    "load-grunt-tasks": "^3.3.0",
-    "time-grunt": "^1.2.0"
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-cli": "^4.0.0",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^4.0.0",
+    "time-grunt": "^2.0.0"
   },
   "scripts": {
-    "test": "grunt",
-    "browser": "browserify lib/loan.js > browser.js"
+    "test": "grunt"
   }
 }
