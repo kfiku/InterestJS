@@ -1,7 +1,7 @@
 {
   "name": "interestjs",
   "version": "1.0.0",
-  "main": "lib/interest.js",
+  "main": "dist/interest.min.js",
   "description": "Calculate compound interest in js (browser/node.js/browserify)",
   "homepage": "https://github.com/kfiku/InterestJS",
   "bugs": "https://github.com/kfiku/InterestJS/issues",
@@ -30,19 +30,28 @@
     "intrerest"
   ],
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "babel-jest": "^24.9.0",
-    "coveralls": "^3.0.9",
-    "jest": "~25.1.0",
-    "standard": "~14.3.3"
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-jest": "^26.6.3",
+    "coveralls": "^3.1.0",
+    "jest": "~26.6.3",
+    "rollup": "^2.45.2",
+    "standard": "~16.0.3",
+    "uglify-js": "^3.13.4"
   },
   "scripts": {
     "test": "npm run lint && jest --coverage",
     "lint": "standard lib/*.js",
     "lint:fix": "standard lib/*.js --fix",
     "test:watch": "jest --coverage --watchAll",
-    "clean": "rm -rf dist coverage"
+    "clean": "rm -rf dist coverage",
+    "build": "npm run clean && npm run build:interest && npm run build:interestToHtml && npm run min",
+    "build:interest": "rollup lib/interest.js --name interest --format iife --file dist/interest.js && babel -o dist/interest.js dist/interest.js",
+    "build:interestToHtml": "rollup lib/interestToHtmlTable.js --name interestToHtmlTable --format iife --file dist/interestToHtmlTable.js && babel -o dist/interestToHtmlTable.js dist/interestToHtmlTable.js",
+    "min": "npm run min:interest && npm run min:interestToHtml",
+    "min:interest": "uglifyjs dist/interest.js -c -m -o dist/interest.min.js",
+    "min:interestToHtml": "uglifyjs dist/interestToHtmlTable.js -c -m -o dist/interestToHtmlTable.min.js"
   },
   "jest": {
     "coverageThreshold": {
