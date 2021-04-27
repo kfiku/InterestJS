@@ -1,6 +1,6 @@
 {
   "name": "interestjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/interest.min.js",
   "description": "Calculate compound interest in js (browser/node.js/browserify)",
   "homepage": "https://github.com/kfiku/InterestJS",
